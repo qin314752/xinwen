@@ -1,0 +1,249 @@
+{dede:include filename="head.htm"/}
+	        <!--DIV-->
+	        <div class="tab_box">		        		        
+	        	<!--
+                	作者：446754162@qq.com
+                	时间：2016-11-15
+                	描述：首页
+                -->
+	        	<div>
+					<div id="wrapper" style="width: 100%;height: 460px;margin: 0 auto;">
+						<div class="slider-wrapper theme-default">
+							<div id="slider" class="nivoSlider">
+								<img src="{dede:global.cfg_templets_skin/}/images/01.jpg"/>
+								<img src="{dede:global.cfg_templets_skin/}/images/02.jpg"/>
+								<img src="{dede:global.cfg_templets_skin/}/images/03.jpg"/>
+							</div>
+						</div>
+					</div>
+					
+					<script type="text/javascript">
+						$(window).load(function() {
+							$('#slider').nivoSlider();
+						});
+					</script>
+					<!--
+			        	作者：446754162@qq.com
+			        	时间：2016-10-31
+			        	描述：内容
+			        -->
+			        <div class="content">
+			        	<!--新闻中心-->
+			        	<div class="floor_one">
+			        		<div class="news_left fl claerfix">
+			        			<h3>新闻中心</h3>
+			        			<img class="Img" src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAgy5qSwAUo6q_vjgUwzwE4fQ.jpg">
+			        			<span>理财的四种方式</span>
+			        			<p>如何快速积攒财富？很多人一生忙碌没有收获，是因为没有好的方案。</p>
+			        		</div>
+			        		{dede:arclist    typeid='20'  row='4'                   }
+			        		<div class="news_middle news_right fl claerfix">
+			        			<div class="news_top news_bottom">
+			        				<h3><a href="[field:arcurl/]">[field:title/]</a></h3>
+			        				<span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+			        				<p>[field:description function="cn_substr(@me,500)"/]...</p>
+			        			</div>
+			        			
+			        			
+			        		</div>
+			        		{/dede:arclist}
+			        		
+			        	</div>
+			        	
+			        	<!--二楼-->
+			        	<div class="floor_two">
+			        		<div class="two_top">
+			        			<div class="two_left fl claerfix">
+			        				<img src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAg2LKSwAUooLq4pQEw4AM4gwI.jpg">
+			        			</div>
+			        			
+			        			<div class="two_right claerfix fr">
+			        				<h3>塑造生态价值品牌</h3>
+			        				<font>以“做一家负责任的投资公司”为使命</font>
+			        				<p>以“诚信天下，稳健一生，追求卓越”为企业核心价值观，以“推</p>
+			        				<p>动和实现可持续的价值增长”为经营理念，不断为客户、股东、员</p>
+			        				<p>工、社会和利益相关者创造价值，为社会和谐做出贡献！</p>
+			        			</div>
+			        		</div>
+			        		<div class="two_bottom">
+			        			<div class="two_bottom_box fl claerfix">
+			        				<div class="introduct fl claerfix">
+			        					<ul>
+			        						<li style="margin: 20px 0 18px 90px;"><img src="{dede:global.cfg_templets_skin/}/images/plane.png"></li>
+			        						<li>灵活自由，投资安全</li>
+			        					</ul>
+			        				</div>
+			        				<div class="introduct fr claerfix">
+			        					<ul>
+			        						<li style="margin: 10px 0 15px 90px;"><img src="{dede:global.cfg_templets_skin/}/images/moneybag.png"></li>
+			        						<li>平台实力雄厚，收益更高</li>
+			        					</ul>
+			        				</div>
+			        			</div>
+			        			
+			        			<div class="two_bottom_box fr claerfix">
+			        				<ul>
+			        					<li style="margin: 20px 0 17px 190px;"><img src="{dede:global.cfg_templets_skin/}/images/hand.png"></li>
+			        					<li>AAA级信用企业，拥有优质团队，智能资金分散，资金全透明</li>
+			        				</ul>
+			        			</div>
+			        		</div>
+			        	</div>
+			        	
+			        	<!--三楼-->
+			        	<div class="floor_three">
+			        		<div class="three_left fl claerfix">
+			        			<h5>市场分析</h5>
+			        			{dede:arclist    typeid='21'    orderby ='pubdate'  row='5'  titlelen='42'             }
+
+			        			<a href="[field:arcurl/]">[field:title/]</a>
+			        			{/dede:arclist}
+
+			        		</div>
+			        	<!-- 	<div class="three_left fl claerfix">
+			        			<h5>市场分析</h5>
+			        			<a href="#">负利率时代！怎样负债也赚钱？</a>
+			        			<a href="#">活用理财小公式 让财富轻松翻倍！</a>
+			        			<a href="#">杜绝5种理财陋习 让你理财不伤心！</a>
+			        			<a href="#">穷富差异大起底 不想做穷人就该学投资！</a>
+			        			<a href="#">快速积攒财富 掌握这些省钱妙招就够了！</a>
+			        		</div> -->
+			        		<div class="three_right fr claerfix">
+
+			        			<!-- <p href="[field:typeurl/]">[field:title/]</p> -->
+
+			        			<img class="Imga" src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAg0sWSwAUogIeTnAMw1QE49QE.jpg">
+			        			{dede:arclist    typeid='21'    orderby ='pubdate'  row='1'     }
+			        			<div class="neirong fr claerfix">
+
+			        				<h4>[field:fulltitle/]</h4>
+				        			<p>
+				        				[field:description function="cn_substr(@me,500)"/]...
+				        			</p>
+			        			</div>
+			        			
+			        			<div class="more">
+			        				<a href="[field:arcurl/]">查看详情</a>
+			        			</div>
+			        			{/dede:arclist}
+				        			
+			        		</div>
+			        	</div>
+			        	
+			        	<!--四楼-->
+			        	<div class="floor_four">
+			        		<div class="four_left fl claerfix">
+			        			<h3>理财新资讯</h3>
+			        		
+
+								{dede:arclist    typeid='22'    orderby ='pubdate'  row='3'  titlelen='60'             }
+
+			        			<a href="[field:arcurl/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+			        			{/dede:arclist}
+			        			
+			        		</div>
+			        		<div class="four_middle fl claerfix">
+			        			<img src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAg6JqWwAUoyZHkigUw_gE49QE.jpg">
+			        		</div>
+			        		<div class="four_right fl claerfix">
+			        			<img src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAg8ZqWwAUo-rLHrAMw5gE49QE.jpg">
+			        		</div>
+			        	</div>
+			        	
+			        	<!--合作伙伴-->
+			        	<div class="friend_title">
+			        		合作伙伴
+			        	</div>
+			        	<div class="indexmaindiv" id="indexmaindiv">
+						<div class="indexmaindiv1 clearfix">
+							<div class="stylesgoleft" id="goleft"></div>
+							<div class="maindiv1 " id="maindiv1">
+								<ul id="count1">
+								{dede:flink row='24' type='image' titlelen="24" typeid="0"} [field:link /] {/dede:flink} 
+								
+								<!--
+ 									<li>
+										<div class="playerdetail">
+											<div class="detailimg"><img src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAgzaOWwAUorNnluQUwdzgw.jpg" /></div>
+										</div>
+									</li>  -->
+									
+								</ul>
+							</div>
+							<div class="stylesgoright" id="goright"></div>
+						</div>
+						<script type="text/javascript">
+							window.onload = function() {
+								var oBtnLeft = document.getElementById("goleft");
+								var oBtnRight = document.getElementById("goright");
+								var oDiv = document.getElementById("indexmaindiv");
+								var oDiv1 = document.getElementById("maindiv1");
+								var oUl = oDiv.getElementsByTagName("ul")[0];
+								var aLi = oUl.getElementsByTagName("li");
+								var now = -5 * (aLi[0].offsetWidth + 13);
+								oUl.style.width = aLi.length * (aLi[0].offsetWidth + 13) + 'px';
+								oBtnRight.onclick = function() {
+									var n = Math.floor((aLi.length * (aLi[0].offsetWidth + 13) + oUl.offsetLeft) / aLi[0].offsetWidth);
+						
+									if(n <= 5) {
+										move(oUl, 'left', 0);
+									} else {
+										move(oUl, 'left', oUl.offsetLeft + now);
+									}
+								}
+								oBtnLeft.onclick = function() {
+									var now1 = -Math.floor((aLi.length / 5)) * 5 * (aLi[0].offsetWidth + 13);
+						
+									if(oUl.offsetLeft >= 0) {
+										move(oUl, 'left', now1);
+									} else {
+										move(oUl, 'left', oUl.offsetLeft - now);
+									}
+								}
+								var timer = setInterval(oBtnRight.onclick, 5000);
+								oDiv.onmouseover = function() {
+									clearInterval(timer);
+								}
+								oDiv.onmouseout = function() {
+									timer = setInterval(oBtnRight.onclick, 5000);
+								}
+						
+							};
+						
+							function getStyle(obj, name) {
+								if(obj.currentStyle) {
+									return obj.currentStyle[name];
+								} else {
+									return getComputedStyle(obj, false)[name];
+								}
+							}
+						
+							function move(obj, attr, iTarget) {
+								clearInterval(obj.timer)
+								obj.timer = setInterval(function() {
+									var cur = 0;
+									if(attr == 'opacity') {
+										cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+									} else {
+										cur = parseInt(getStyle(obj, attr));
+									}
+									var speed = (iTarget - cur) / 6;
+									speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+									if(iTarget == cur) {
+										clearInterval(obj.timer);
+									} else if(attr == 'opacity') {
+										obj.style.filter = 'alpha(opacity:' + (cur + speed) + ')';
+										obj.style.opacity = (cur + speed) / 100;
+									} else {
+										obj.style[attr] = cur + speed + 'px';
+									}
+								}, 30);
+							}
+						</script>
+					</div>
+				
+				</div>       	
+			</div>
+		
+        
+       {dede:include filename="footer.htm"/}

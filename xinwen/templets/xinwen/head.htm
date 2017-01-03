@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html language="zh">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<title>中皇太发</title>
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/common.css" type="text/css"/>
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/index.css" type="text/css"/>
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/themes/default/default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/themes/light/light.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/themes/dark/dark.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/themes/bar/bar.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/nivo-slider.css" type="text/css" media="screen" />	
+		<script src="{dede:global.cfg_templets_skin/}/style/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="{dede:global.cfg_templets_skin/}/style/jquery.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/scripts/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/js/jquery.nivo.slider.js"></script>
+		<script>
+			$(function() {
+				var $div_li = $("#tab .tab_menu .head .cont .nav ul li");
+				$div_li.click(function() {
+					$(this).addClass("active1") //当前<li>元素高亮
+						.siblings().removeClass("active1"); //去掉其它同辈<li>元素的高亮
+					var index = $div_li.index(this); // 获取当前点击的<li>元素 在 全部li元素中的索引。
+					$("#tab .tab_box > div") //选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+						.eq(index).show() //显示 <li>元素对应的<div>元素
+						.siblings().hide(); //隐藏其它几个同辈的<div>元素
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--
+        	作者：446754162@qq.com
+        	时间：2016-10-28
+        	描述：top
+        -->
+        <div class="top">
+        	<div class="header">
+        		<div class="logo">
+        			<h1><a href="{dede:global.cfg_basehost/}">中皇太发</a></h1>
+        		</div>
+        		<div class="telphone">
+        			<p>热线电话</p>
+        			<span><img src="{dede:global.cfg_templets_skin/}/images/tel1.png"></span><a>400-900-4379</a>
+        		</div>
+        	</div>
+        </div>
+        
+	    <div id="tab">	        
+
+	    	<!--nav-->
+	    	<div class="tab_menu">
+	        	<!--
+		        	作者：446754162@qq.com
+		        	时间：2016-10-28
+		        	描述：nav
+	        	-->			        
+		        <div class="head">
+					<div class="cont">
+					    <div class="nav"> 
+					        <!--导航条-->
+						    <ul class="nav-main">
+						     {dede:channel   row='6'    type ='top'  }                 
+							  
+							    <li><a  href="[field:typelink/]">[field:typename/]</a></li>
+							
+                                {/dede:channel}
+							  
+						    </ul>
+						 
+					       
+						   																															      
+					    </div>
+					    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/js/main.js"></script>
+					</div>
+				</div>				
+	        </div>
+        

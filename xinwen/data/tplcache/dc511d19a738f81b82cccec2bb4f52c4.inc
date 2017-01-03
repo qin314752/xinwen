@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]">[field:title/]</a><span>[field:pubdate function="GetDateTimeMK(@me)" /]</span>

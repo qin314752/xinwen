@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>

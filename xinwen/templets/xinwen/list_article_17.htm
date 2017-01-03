@@ -1,0 +1,37 @@
+{dede:include filename="head.htm"/}
+<!--
+            	作者：446754162@qq.com
+            	时间：2016-11-15
+            	描述：社会公益
+            -->
+				<div class="banner">
+		        	<img src="{dede:global.cfg_templets_skin/}/images/AD0I4oLBBRACGAAgjYiXwAUorIeVmgIwwAc49AM.jpg">
+		        </div>
+		        
+		   		<div class="public">
+		   		{dede:list pagesize ='5'}
+		   			<div class="public_box">
+		   				<div class="public_left fl claerfix">
+			   				<img src="[field:picname/]">
+			   			</div>
+			   			<div class="public_right fr claerfix">
+			   				<h3>[field:title/]</h3>
+			   				<p>
+			   					[field:description function="cn_substr(@me,500)"/]...
+			   				</p>
+			   				<section>公益组织：深圳壹基金公益基金会</section>
+			   				
+			   				<div class="checkmore">
+			   					<a href="[field:arcurl/]">查看详情</a>
+			   				</div>
+			   			</div>
+		   			</div>
+		   		{/dede:list}	
+		   		<center>
+		   		<div  class="dede_pages"><ul class=pagelist>{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="2"/}</ul></div>
+		   		</center>	
+		   		</div>
+		   		<br>
+		   		<br>
+		   		<br>
+{dede:include filename="footer.htm"/}
